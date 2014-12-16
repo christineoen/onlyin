@@ -4,6 +4,8 @@ class CreatePosts < ActiveRecord::Migration
       t.belongs_to :user
       t.belongs_to :location
       t.string :title
+      t.integer :upvotes
+      t.integer :downvotes
       
       t.timestamps
     end
