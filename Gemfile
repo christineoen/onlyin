@@ -46,6 +46,5 @@ gem 'pry-byebug'
 gem 'better_errors'
 gem 'pg'
 gem 'aws-sdk'
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+gem 'foundation-rails'
 
