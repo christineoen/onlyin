@@ -45,6 +45,7 @@ gem 'figaro'
 gem 'pry-byebug'
 gem 'better_errors'
 gem 'pg'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'aws-sdk'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 
