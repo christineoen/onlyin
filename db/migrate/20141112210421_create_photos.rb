@@ -1,8 +1,7 @@
 class CreatePhotos < ActiveRecord::Migration
   def change
     create_table :photos do |t|
-      t.belongs_to :user
-      t.belongs_to :location
+      t.belongs_to :post
       
       t.timestamps
     end
