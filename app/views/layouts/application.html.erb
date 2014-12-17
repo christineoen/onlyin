@@ -11,6 +11,10 @@
     <%= csrf_meta_tags %>
   </head>
 
+  <% if user_signed_in? %>
+    <%= render "home/nav" %>
+  <% end %>
+
   <body>
 
     <%= yield %>
