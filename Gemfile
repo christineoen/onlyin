@@ -40,6 +40,7 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'carrierwave'
+gem "mini_magick"
 gem 'hirb'
 gem 'figaro'
 gem 'pry-byebug'
