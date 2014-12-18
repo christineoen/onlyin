@@ -4,4 +4,9 @@ class Post < ActiveRecord::Base
   has_many :votes
   has_many :comments
   mount_uploader :file, FileUploader
+
+  def set_success(format, opts)
+    self.success = true
+  end
+
 end
