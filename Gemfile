@@ -40,6 +40,8 @@ gem 'spring',        group: :development
 
 gem 'devise'
 gem 'carrierwave'
+gem 'carrierwave-video'
+gem 'carrierwave-video-thumbnailer'
 gem "mini_magick"
 gem 'hirb'
 gem 'figaro'

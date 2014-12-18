@@ -1,5 +1,5 @@
 
 <% @posts.reverse.each do |post| %>
-<h1><%= image_tag post.file_url %></h1>
+<h1><%= image_tag post.file_url(:feed) %></h1>
 <% end %>
 
