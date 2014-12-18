@@ -1,13 +1,22 @@
 <div class="sticky">
   <nav class="top-bar" data-topbar role="navigation">
 
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/">Only In..</a></h1>
+    </li>
+  </ul>
+
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
+      <li class="active">
+      <a href="/" data-reveal-id="myModal">Post Photo or Video</a>
+      </li>
         <li class="has-dropdown">
-          <a href="#">Right Button Dropdown</a>
+          <a href="#">Me</a>
           <ul class="dropdown">
-            <li><a href="#">First link in dropdown</a></li>
+            <li><a href="#">My Profile</a></li>
             <li><a href="#"><%= link_to "Logout", destroy_user_session_path, method: :delete %></a></li>
           </ul>
         </li>
@@ -15,16 +24,22 @@
 
       <!-- Left Nav Section -->
       <ul class="left">
-        <li><a href="#">Left Nav Button</a></li>
+        <li><a href="/">New</a></li>
+        <li><a href="/">Trending</a></li>
+        <li><a href="/">Top Rated</a></li>
+        <li><a href="/">Map</a></li>
       </ul>
-
-      <!-- Center Nav Section -->
-      <div class="row">
-        <div class="small-3 small-centered columns">
-          <div class="onlyin-header">Only In..</div>
-        </div>
-      </div>
 
     </section>
   </nav>
+
+  <!-- Modal -->
+  <div id="myModal" class="reveal-modal" data-reveal>
+    <h3>Post Photo or Video</h3>
+
+    <%= render "posts/form" %>
+
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
 </div>  

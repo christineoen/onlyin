@@ -1,3 +1,5 @@
-<div class="row">
-  <a href="#" class="button round">Post Photo or Video</a>
-</div>
+
+<% @posts.reverse.each do |post| %>
+<h1><%= image_tag post.file_url %></h1>
+<% end %>
+
